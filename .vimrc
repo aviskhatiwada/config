@@ -54,12 +54,28 @@ set expandtab
 set smartindent
 
 
-" set color scheme
 
 syntax enable
 set background=light " or light, depending on the color scheme
-colorscheme cleanroom
+highlight clear
+highlight Normal ctermfg=black ctermbg=white
+highlight Comment ctermfg=darkgrey ctermbg=white
+highlight Constant ctermfg=black ctermbg=white cterm=bold
+highlight Identifier ctermfg=black ctermbg=white cterm=bold
+highlight Statement ctermfg=black ctermbg=white cterm=bold
+highlight PreProc ctermfg=black ctermbg=white cterm=bold
+highlight Type ctermfg=black ctermbg=white cterm=bold
+highlight Special ctermfg=black ctermbg=white cterm=bold
+highlight Underlined ctermfg=black ctermbg=white cterm=underline
+highlight Ignore ctermfg=white ctermbg=white
+highlight Error ctermfg=black ctermbg=white cterm=bold
+highlight Todo ctermfg=black ctermbg=white cterm=bold
 
 
 "  hide tildes 
 hi EndOfBuffer ctermfg=white
+
+
+
+
+
