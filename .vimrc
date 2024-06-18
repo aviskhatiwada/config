@@ -75,7 +75,7 @@ highlight Todo ctermfg=black ctermbg=white cterm=bold
 "  hide tildes 
 hi EndOfBuffer ctermfg=white
 
-
-
+"  copy to clipboard
+vnoremap <C-c> "*y
 
 
