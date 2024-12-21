@@ -1,0 +1,9 @@
+set default-bg "#FFFFFF"
+set recolor "true"
+set recolor-lightcolor "#FFFFFF"
+set recolor-darkcolor "#000000"
+set guioptions v
+set selection-clipboard none
+set pages-per-row 2
+
+
