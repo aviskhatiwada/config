@@ -5,5 +5,7 @@ set recolor-darkcolor "#000000"
 set guioptions v
 set selection-clipboard none
 set pages-per-row 2
-
+map [fullscreen] m navigate previous
+map [fullscreen] , navigate previous
+map [fullscreen] <Space> navigate next
 
