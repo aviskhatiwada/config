@@ -3,9 +3,24 @@ set recolor "true"
 set recolor-lightcolor "#FFFFFF"
 set recolor-darkcolor "#000000"
 set guioptions v
-set selection-clipboard none
+set completion-fg "#FFFFFF"
+set completion-bg "#000000"
+set highlight-fg "#FFFFFF"
+set highlight-color "#000000"
+set highlight-active-color "#FFFFFF"
+
 set pages-per-row 2
+set selection-clipboard "none"
+
 map [fullscreen] m navigate previous
 map [fullscreen] , navigate previous
 map [fullscreen] <Space> navigate next
+map [fullscreen] <C-i> zoom in
+map [fullscreen] <C-o> zoom out
+
+map [normal] m navigate previous
+map [normal] , navigate previous
+map [normal] <Space> navigate next
+map [normal] <C-i> zoom in
+map [normal] <C-o> zoom out
 
