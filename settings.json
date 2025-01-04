@@ -1,0 +1,52 @@
+{
+    "vim.cursorStylePerMode.insert": "block",
+    "vim.cursorStylePerMode.normal": "block",
+    "editor.cursorBlinking": "solid",
+    "extensions.ignoreRecommendations": true,
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+    "files.associations": {
+    //"*.*": "plaintext", 
+    },
+"workbench.activityBar.location": "hidden",
+"editor.suggest.showWords": false,
+"python.analysis.extraPaths": [
+    "app",
+    "/venv/bin/",
+    "~/tinygrad/"
+],
+"python.defaultInterpreterPath": "/venv",
+"git.openRepositoryInParentFolders": "never",
+"workbench.colorCustomizations": {
+    "activityBar.background": "#FFFFFF",  // Change the activity bar background color
+    "activityBar.foreground": "#FFFFFF",  // Change the activity bar icon color
+    "statusBar.background": "#FFFFFF",    // Change the status bar background color
+
+    "statusBar.foreground": "#000000",    // Change the status bar text color
+    "titleBar.activeBackground": "#FFFFFF", // Change the title bar background color
+    "titleBar.activeForeground": "#FFFFFF",  // Change the title bar text color
+    "editor.foreground": "#000000",
+    "editor.background": "#FFFFFF",
+    "editor.selectionBackground": "#cfcfcf",
+    "editor.selectionHighlightBackground": "#135564"
+},
+"workbench.colorTheme": "Simple BW Light",
+"editor.tokenColorCustomizations": {
+  "textMateRules": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],// Applies to all tokens
+      "settings": {
+        "fontStyle": "" // Removes italics
+      }
+    }
+  ]
+},
+"editor.lineNumbers": "on",
+"editor.renderLineHighlight": "none",
+"editor.selectionClipboard": false,
+"editor.scrollbar.horizontal": "hidden",
+"editor.scrollbar.vertical": "hidden",
+"editor.minimap.renderCharacters": false,
+"editor.minimap.enabled": false,
+"editor.scrollbar.verticalScrollbarSize": 0
+}
