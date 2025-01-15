@@ -1,3 +1,4 @@
+set default-plugin pdf-poppler
 set default-bg "#FFFFFF"
 set recolor "true"
 set recolor-lightcolor "#FFFFFF"
@@ -6,21 +7,27 @@ set guioptions v
 set completion-fg "#FFFFFF"
 set completion-bg "#000000"
 set highlight-fg "#FFFFFF"
-set highlight-color "#000000"
-set highlight-active-color "#FFFFFF"
+set highlight-color "rgba(211, 211, 211,0.5)"
+#set highlight-color "#808080"
+#set highlight-color "#FFFFFF"
+#set highlight-active-color "#FFFFFF"
 
 set pages-per-row 2
 set selection-clipboard "none"
 
+map [fullscreen] a navigate previous
 map [fullscreen] m navigate previous
 map [fullscreen] , navigate previous
 map [fullscreen] <Space> navigate next
 map [fullscreen] <C-i> zoom in
 map [fullscreen] <C-o> zoom out
 
+map [normal] a navigate previous
 map [normal] m navigate previous
 map [normal] , navigate previous
 map [normal] <Space> navigate next
 map [normal] <C-i> zoom in
 map [normal] <C-o> zoom out
+set window-height 3000
+set window-width 3000
 
