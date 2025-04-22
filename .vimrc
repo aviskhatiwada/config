@@ -1,3 +1,4 @@
+set shortmess+=I " suppress msg.
 imap jj <Esc>
 
 "   Allow mouse dragging
@@ -6,24 +7,37 @@ set ttymouse=xterm2
 set mouse=a
 set t_Co=256
 let s:hidden_all = 0
+"function! ToggleHiddenAll()
+"    if s:hidden_all  == 0
+"        let s:hidden_all = 1
+"        set noshowmode
+"        set noruler
+"        set laststatus=0
+"        set noshowcmd
+"    else
+"        let s:hidden_all = 0
+"        set showmode
+"        set ruler
+"        set laststatus=2
+"        set showcmd
+"    endif
+"endfunction
+
 function! ToggleHiddenAll()
-    if s:hidden_all  == 0
-        let s:hidden_all = 1
-        set noshowmode
-        set noruler
-        set laststatus=0
-        set noshowcmd
-    else
-        let s:hidden_all = 0
-        set showmode
-        set ruler
-        set laststatus=2
-        set showcmd
-    endif
+    "let s:hidden_all = 1
+    "set noshowmode
+    "set noruler
+    "set laststatus=0
+    "set noshowcmd
 endfunction
 
-nnoremap <S-h> :call ToggleHiddenAll()<CR>
-
+"set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+nnoremap <S-t> :call ToggleHiddenAll()<CR><CR>:echo ""<CR>
+" bind esc to remove highlight
+"nnoremap <Esc> :noh<CR><Esc> 
 
  function CenterPane()
    lefta vnew
@@ -45,15 +59,30 @@ endfunction
 
 
 "   set tabbing
-set softtabstop=4
+
+" General tab settings
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
+set autoindent
+set smartindent 
+set smarttab
+"set nosmartindent
+"set nocindent
 
+" Disable filetype plugin and indent overrides
+filetype indent off
+filetype plugin off
 
-set smartindent
+set backspace=indent,eol,start
 
+" paste
+set pastetoggle=<C-l>
+"nnoremap <silent><expr> <>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
+"let hlstate=0
+"nnoremap <C-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<cr>
 
 syntax enable
 set background=light " or light, depending on the color scheme
@@ -75,7 +104,18 @@ highlight Todo ctermfg=black ctermbg=white cterm=bold
 "  hide tildes 
 hi EndOfBuffer ctermfg=white
 
+" hide highlights
+set nohlsearch
+
 "  copy to clipboard
 vnoremap <C-c> "*y
+"inoremap <C-l> :set paste<CR>:set paste<CR>
 
+" prevent deletion cuts
+" nnoremap d "_d
 
+" Redefine gm to do what gM used to do
+nnoremap gm gM
+
+" Redefine gM to do what gm used to do
+nnoremap gM gm
