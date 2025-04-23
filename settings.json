@@ -1,4 +1,16 @@
 {
+  "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+  "vim.statusBarColors.insert": "#BF616A",
+  "vim.statusBarColors.visual": "#B48EAD",
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+
     "vim.cursorStylePerMode.insert": "block",
     "vim.cursorStylePerMode.normal": "block",
     "editor.cursorBlinking": "solid",
@@ -11,26 +23,24 @@
 "workbench.activityBar.location": "hidden",
 "editor.suggest.showWords": false,
 "python.analysis.extraPaths": [
-    "app",
-    "/venv/bin/",
-    "~/Desktop/t0"
 ],
 "python.defaultInterpreterPath": "/venv",
 "git.openRepositoryInParentFolders": "never",
 "workbench.colorCustomizations": {
-    "activityBar.background": "#FFFFFF",  // Change the activity bar background color
-    "activityBar.foreground": "#FFFFFF",  // Change the activity bar icon color
-    "statusBar.background": "#FFFFFF",    // Change the status bar background color
-
-    "statusBar.foreground": "#000000",    // Change the status bar text color
-    "titleBar.activeBackground": "#FFFFFF", // Change the title bar background color
-    "titleBar.activeForeground": "#FFFFFF",  // Change the title bar text color
-    "editor.foreground": "#000000",
-    "editor.background": "#FFFFFF",
-    "editor.selectionBackground": "#cfcfcf",
-    //"editor.selectionHighlightBackground": "#000000",
-    "editorLineNumber.foreground": "#000000",
-    "editorLineNumber.activeForeground": "#000000"
+  "activityBar.background": "#FFFFFF",
+  "activityBar.foreground": "#FFFFFF",
+  "statusBar.background": "#8FBCBB",
+  "statusBar.foreground": "#434C5E",
+  "titleBar.activeBackground": "#FFFFFF",
+  "titleBar.activeForeground": "#FFFFFF",
+  "editor.foreground": "#000000",
+  "editor.background": "#FFFFFF",
+  "editor.selectionBackground": "#cfcfcf",
+  "editorLineNumber.foreground": "#000000",
+  "editorLineNumber.activeForeground": "#000000",
+  "statusBar.noFolderBackground": "#8FBCBB",
+  "statusBar.debuggingBackground": "#8FBCBB",
+  "statusBar.debuggingForeground": "#434C5E"
 },
 "workbench.colorTheme": "Simple BW Light",
 "editor.tokenColorCustomizations": {
@@ -43,7 +53,7 @@
     }
   ]
 },
-"editor.lineNumbers": "on",
+"editor.lineNumbers": "off",
 "editor.renderLineHighlight": "none",
 "editor.selectionClipboard": false,
 "editor.scrollbar.horizontal": "hidden",
@@ -51,5 +61,17 @@
 "editor.minimap.renderCharacters": false,
 "editor.minimap.enabled": false,
 "editor.scrollbar.verticalScrollbarSize": 0,
+"security.workspace.trust.untrustedFiles": "open",
+"security.promptForLocalFileProtocolHandling": false,
+"workbench.startupEditor": "none",
+"window.menuBarVisibility": "compact",
+"window.commandCenter": false,
+"workbench.editor.showTabs": "none",
+"workbench.editor.editorActionsLocation": "hidden",
+"workbench.layoutControl.enabled": false,
+"chat.commandCenter.enabled": false,
+"window.titleBarStyle": "native",
+"application.shellEnvironmentResolutionTimeout": 1,
+"workbench.statusBar.visible": false,
 //"editor.stickyScroll.enabled": false,
 }
